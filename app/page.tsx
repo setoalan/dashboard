@@ -1,8 +1,15 @@
+import StravaChart from '@/app/components/strava-chart';
+
 export default async function Home() {
   return (
-    <div>
-      <main className="flex min-h-screen flex-col p-6">
-        <h1>Alan&apos;s Dashboard</h1>
+    <div className="min-h-screen max-w-none p-6">
+      <main>
+        <div className="prose lg:prose-lg">
+          <h1>Alan&apos;s Dashboard</h1>
+        </div>
+        <div className="flex">
+          <StravaChart />
+        </div>
       </main>
       <footer></footer>
     </div>

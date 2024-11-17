@@ -9,6 +9,9 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      strava: '#fc4c02',
+    },
     extend: {
       colors: {
         background: 'var(--background)',
