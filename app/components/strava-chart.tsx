@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { fetchStravaData } from '@/app/lib/strava-data';
-import stravaRideIcon from '@/app/assets/strava-ride.svg';
 import { formatDistance } from '@/app/utils/formatDistance';
 import { formatTime } from '@/app/utils/formatTime';
+import { StravaIcon } from '@/public/icons/strava';
 import type { StravaActivity } from '@/app/types/strava';
 
 export default async function StravaChart() {
@@ -31,7 +31,7 @@ export default async function StravaChart() {
                 <td>
                   <div className="flex gap-3">
                     <div className="mask mask-hexagon-2 flex h-12 w-12 justify-center bg-strava">
-                      <Image className="fill-white" width={32} height={32} src={stravaRideIcon} alt="" />
+                      <Image className="fill-white" width={32} height={32} src={StravaIcon[type]} alt={type} />
                     </div>
                     <div>
                       <div className="font-bold">{name}</div>

@@ -9,7 +9,7 @@ export type StravaAccessTokenResponse = {
 export type StravaActivity = {
   id: number;
   name: string;
-  type: string;
+  type: StravaIcon;
   distance: number;
   moving_time: number;
   suffer_score: number;
