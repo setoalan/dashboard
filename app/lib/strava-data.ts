@@ -4,7 +4,7 @@ const NUM_STRAVA_ACTIVITIES = 5;
 
 export const fetchStravaData = async (): Promise<StravaActivity[]> => {
   try {
-    const { access_token: accessToken } = await getStravaAccessToken();
+    const { access_token: accessToken } = await fetchStravaAccessToken();
 
     const params = new URLSearchParams({
       access_token: accessToken,
@@ -20,7 +20,7 @@ export const fetchStravaData = async (): Promise<StravaActivity[]> => {
   }
 };
 
-const getStravaAccessToken = async (): Promise<StravaAccessTokenResponse> => {
+const fetchStravaAccessToken = async (): Promise<StravaAccessTokenResponse> => {
   try {
     const body = JSON.stringify({
       client_id: process.env.STRAVA_CLIENT_ID,

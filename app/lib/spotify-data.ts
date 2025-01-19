@@ -1,4 +1,3 @@
-import queryString from 'query-string';
 import type { SpotifyAccessTokenResponse, SpotifyTopArtistsResponse } from '@/app/types/spotify';
 
 const NUM_SPOTIFY_ARTISTS = 5;
@@ -7,7 +6,7 @@ export const fetchSpotifyData = async (): Promise<SpotifyTopArtistsResponse> => 
   try {
     const { access_token: accessToken } = await fetchSpotifyRefreshToken();
 
-    const params = queryString.stringify({
+    const params = new URLSearchParams({
       limit: NUM_SPOTIFY_ARTISTS.toString(),
     });
 
@@ -28,9 +27,9 @@ const fetchSpotifyRefreshToken = async (): Promise<SpotifyAccessTokenResponse> =
   try {
     const clientId = process.env.SPOTIFY_CLIENT_ID;
     const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
-    const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
+    const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN || '';
 
-    const params = queryString.stringify({
+    const params = new URLSearchParams({
       grant_type: 'refresh_token',
       refresh_token: refreshToken,
     });

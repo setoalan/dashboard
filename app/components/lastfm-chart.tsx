@@ -26,16 +26,7 @@ export default async function LastfmChart() {
                 <td>
                   <div className="flex gap-3">
                     <div className="mask mask-hexagon-2 flex h-12 w-12 justify-center">
-                      <Image
-                        className="fill-white"
-                        src={`${image[2]['#text']}`}
-                        alt={name}
-                        width={42}
-                        height={42}
-                        style={{
-                          objectFit: 'cover',
-                        }}
-                      />
+                      <Image className="fill-white" src={`${image[2]['#text']}`} alt={name} width={42} height={42} />
                     </div>
                     <div>
                       <div className="font-bold">{name}</div>

@@ -9,11 +9,11 @@ export default async function Home() {
         <div className="prose lg:prose-lg">
           <h1>Alan&apos;s Dashboard</h1>
         </div>
-        <div className="flex">
+        <div className="my-4 flex gap-3">
           <LastfmChart />
           <SpotifyChart />
         </div>
-        <div className="flex">
+        <div className="flex gap-3">
           <StravaChart />
         </div>
       </main>
