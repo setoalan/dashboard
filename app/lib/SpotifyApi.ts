@@ -1,8 +1,8 @@
-import type { SpotifyAccessTokenResponse, SpotifyTopArtistsResponse } from '@/app/types/spotify';
+import type { SpotifyAccessTokenResponse, SpotifyArtistsTopResponse } from '@/app/types/Spotify';
 
 const NUM_SPOTIFY_ARTISTS = 5;
 
-export const fetchSpotifyData = async (): Promise<SpotifyTopArtistsResponse> => {
+export const fetchSpotifyData = async (): Promise<SpotifyArtistsTopResponse> => {
   try {
     const { access_token: accessToken } = await fetchSpotifyRefreshToken();
 

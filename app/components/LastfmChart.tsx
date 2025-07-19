@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { fetchLastfmData } from '@/app/lib/lastfm-data';
-import type { LastfmArtist } from '@/app/types/lastfm';
+import { fetchLastfmData } from '@/app/lib/LastfmApi';
+import type { LastfmArtist } from '@/app/types/Lastfm';
 
 export default async function LastfmChart() {
   const lastfmData = await fetchLastfmData();

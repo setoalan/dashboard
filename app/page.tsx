@@ -1,6 +1,6 @@
-import LastfmChart from '@/app/components/lastfm-chart';
-import SpotifyChart from '@/app/components/spotify-chart';
-import StravaChart from '@/app/components/strava-chart';
+import LastfmChart from '@/app/components/LastfmChart';
+import SpotifyChart from '@/app/components/SpotifyChart';
+import StravaChart from '@/app/components/StravaChart';
 
 export default async function Home() {
   return (

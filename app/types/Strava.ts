@@ -1,3 +1,5 @@
+import { StravaIcon } from '@/public/icons/strava';
+
 export type StravaAccessTokenResponse = {
   access_token: string;
   expires_at: number;

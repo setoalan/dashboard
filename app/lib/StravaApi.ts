@@ -1,4 +1,4 @@
-import type { StravaAccessTokenResponse, StravaActivity } from '@/app/types/strava';
+import type { StravaAccessTokenResponse, StravaActivity } from '@/app/types/Strava';
 
 const NUM_STRAVA_ACTIVITIES = 5;
 

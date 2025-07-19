@@ -26,7 +26,7 @@ export type SpotifyArtist = {
   uri: string;
 };
 
-export type SpotifyTopArtistsResponse = {
+export type SpotifyArtistsTopResponse = {
   href: string;
   items: SpotifyArtist[];
   limit: number;

@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { fetchSpotifyData } from '@/app/lib/spotify-data';
-import type { SpotifyArtist } from '@/app/types/spotify';
+import { fetchSpotifyData } from '@/app/lib/SpotifyApi';
+import type { SpotifyArtist } from '@/app/types/Spotify';
 
 export default async function SpotifyChart() {
   const spotifyData = await fetchSpotifyData();

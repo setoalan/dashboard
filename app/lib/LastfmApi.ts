@@ -1,4 +1,4 @@
-import type { LastfmArtist } from '@/app/types/lastfm';
+import type { LastfmArtist } from '@/app/types/Lastfm';
 
 const NUM_LASTFM_ARTISTS = 5;
 
